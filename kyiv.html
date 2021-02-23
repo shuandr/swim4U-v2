@@ -115,7 +115,7 @@
                         <ol>
                             <li class="swim-1 include-list" ng-repeat="x in data.progIntro.list">{[{ x }]}</li>
                         </ol><br>
-                        <p class="swim-1">{[{data.progIntro.descr}]}</p>
+                        <!-- <p class="swim-1">{[{data.progIntro.descr}]}</p> -->
                         <br>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
         </div>
         <div id="feedback-4u" class="section">
             <h1 class="text-center white uppercase">відгуки <span class="bold">учасників</span></h1><br>
-            <div class="grid-x  grid-padding-x small-up-1 medium-up-2 xlarge-up-3">
+            <div class="grid-x  grid-padding-x small-up-1  large-up-2 xlarge-up-3">
                 <div class="cell" ng-repeat="quote in data.feedbacks">
                     <div class="card white-bg">
                         <div class="grid-x">
@@ -174,7 +174,7 @@
                             <div class="cell medium-auto">
                                 <div class="card-section ">
                                     <div class="read-more" style="overflow: hidden;">
-                                        <h6 class="swim-1 bold uppercase">{[{quote.name}]} <br>
+                                        <h6 class="swim-1 s-bold">{[{quote.name}]} <br>
                                             <span class="occupy swim-2">{[{quote.occupy}]}</span></h6>
                                         <p class="pre">{[{quote.text}]}</p>
                                     </div>
