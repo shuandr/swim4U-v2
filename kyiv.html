@@ -86,19 +86,10 @@
         </div>
         <div class="white-bg slogan">
             <h3 class="text-center swim-1 uppercase ">set your goal & <span class="swim-2 bold">swim</span> it</h3>
-        </div>
-        <div class="section">
-            <h1 class="text-center white uppercase">наші <span class="bold ">тренери</span></h1>
-            <div class="grid-container trainers">
-                <div class=" grid-x  grid-padding-x small-up-1 medium-up-2 large-up-3">
-                    <div class="cell white text-center" ng-repeat="trainer in data.trainers">
-                        <img src="assets/img/{[{trainer.img}]}">
-                        <h4 class="bold uppercase">{[{trainer.name}]}</h4>
-                        <p class="pre">{[{trainer.txt}]}</p>
-                    </div>
-                </div>
-            </div>
-        </div><div class="section white-bg">
+        </div>    <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <div class="section white-bg">
             <h1 class="text-center swim-1 uppercase">наші <span class="bold swim-2">програми</span></h1><br>
             <div class="grid-container">
                 <div class="grid-x  grid-padding-x">
@@ -124,7 +115,7 @@
                         <ol>
                             <li class="swim-1 include-list" ng-repeat="x in data.progIntro.list">{[{ x }]}</li>
                         </ol><br>
-                        <p class="swim-1">{[{data.progIntro.descr}]}</p>
+                        <p class="swim-1 s-bold">{[{data.progIntro.descr}]}</p>
                         <br>
                     </div>
                 </div>
@@ -155,23 +146,21 @@
                     </div>
                 </div>
             </div>
-        </div><div class="grid-x align-middle">
+        </div>    <div class="grid-x align-middle">
             <div class="cell medium-7 large-9">
                 <h1 class="text-center white uppercase">Подарункові <span class="bold">сертифікати <br>від 1000</span> <small class="white">грн</small></h1>
             </div>
             <div class="cell medium-5 large-3">
                 <img style="" src="assets/img/cert_S.webp" alt="">
             </div>
-        </div> <br><br>
-        <div class="section white-bg">
+        </div> <br><br>    <div class="section white-bg">
             <h1 class="text-center swim-1 uppercase">we are <span class="bold swim-2">in action</span></h1><br>
             <div class="gallery">
                 <slick ng-if="dataLoaded" settings="mainSlickConfig">
-                    <img class="align-self-middle" ng-repeat="slide in data.gallery" src="assets/img/gallery/swim/{[{slide}]}" alt="123">
+                    <img class="align-self-middle" ng-repeat="slide in data.gallery" src="assets/img/gallery/swim/{[{slide}]}" alt=" ">
                 </slick>
             </div><br><br>
-        </div>
-        <div id="feedback-4u" class="section">
+        </div>    <div id="feedback-4u" class="section">
             <h1 class="text-center white uppercase">відгуки <span class="bold">учасників</span></h1><br>
             <div class="grid-x  grid-padding-x small-up-1  large-up-2 xlarge-up-3">
                 <div class="cell" ng-repeat="quote in data.feedbacks">
@@ -193,7 +182,7 @@
                     </div>
                 </div>
             </div>
-        </div><br><div class="section white-bg ">
+        </div><br>    <div class="section white-bg ">
             <h1 class="text-center swim-1 uppercase">наші <span class="bold swim-2">партнери</span></h1>
             <div id="partners" class=" gallery-logos">
                 <slick ng-if="dataLoaded" settings="mainSlickConfig">
@@ -244,7 +233,7 @@
     <script src="assets/js/app.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js_plugins/angular-slick.js"></script>
-    <script src="assets/js_plugins/readmore.min.js"></script>
+    <!-- <script src="assets/js_plugins/readmore.min.js"></script> -->
 </body>
 
 </html>
